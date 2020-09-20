@@ -1,0 +1,4 @@
+life/MapGenerator.java
+ life.MapGenerator
+life/Main.java
+ life.Main
