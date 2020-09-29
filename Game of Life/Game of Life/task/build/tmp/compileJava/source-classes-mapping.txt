@@ -1,4 +1,6 @@
-life/MapGenerator.java
- life.MapGenerator
 life/Main.java
  life.Main
+life/Universe.java
+ life.Universe
+life/Generator.java
+ life.Generator

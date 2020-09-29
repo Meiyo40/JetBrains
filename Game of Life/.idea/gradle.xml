@@ -8,13 +8,16 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="#JAVA_INTERNAL" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Game of Life/task" />
+            <option value="$PROJECT_DIR$/Problems/Complex numbers" />
+            <option value="$PROJECT_DIR$/Problems/Find the seed" />
             <option value="$PROJECT_DIR$/Problems/Gaussian random numbers" />
             <option value="$PROJECT_DIR$/Problems/Generate random numbers" />
+            <option value="$PROJECT_DIR$/Problems/Spiral" />
+            <option value="$PROJECT_DIR$/Problems/The sequence" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
