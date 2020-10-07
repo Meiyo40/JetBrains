@@ -1,3 +1,5 @@
+life/GameOfLife.java
+ life.GameOfLife
 life/Main.java
  life.Main
 life/Universe.java

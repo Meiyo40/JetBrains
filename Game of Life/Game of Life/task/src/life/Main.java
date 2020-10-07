@@ -8,17 +8,22 @@ public class Main {
         boolean isValidEntry = false;
         while (!isValidEntry) {
             try {
+
+                GameOfLife game = new GameOfLife();
                 int n, g;
-                long s;
+                long s = 500;
                 n = Integer.parseInt(in.next());
                 //s = Long.parseLong(in.next());
                 //g = Integer.parseInt(in.next());
-                g = 10;
+                g = 100;
                 if (n > 0 && g >= 0) isValidEntry = true;
                 if (isValidEntry) {
-                    Universe u = new Universe(n, 500);
-                    for (int i = 1; i < g+1; i++) {
-                        u.evolve(i);
+                    Universe world = new Universe(n, s);
+                    game.setWorld(world);
+                    int i = 1;
+                    while (i < g+1) {
+                        game.refresh();
+                        i++;
                     }
                 }
             } catch (NumberFormatException | InterruptedException e) {

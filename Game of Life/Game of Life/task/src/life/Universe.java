@@ -4,8 +4,10 @@ import java.io.IOException;
 
 public class Universe {
     public int[][] state;
+    public int Generation;
 
     public Universe(int N, long seed) {
+        this.Generation = 1;
         state = Generator.create(N, seed);
     }
 
@@ -19,11 +21,11 @@ public class Universe {
                 Runtime.getRuntime().exec("clear");
         }
         catch (InterruptedException | IOException e) {}
-
         System.out.println("Generation #" + gen);
         System.out.println("Alive: " + this.countAliveCells());
         System.out.println(this.toString());
-        java.lang.Thread.sleep(500);
+        java.lang.Thread.sleep(100);
+        this.Generation++;
     }
 
     public int countAliveCells() {
